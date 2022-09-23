@@ -5,6 +5,7 @@ ruby "3.1.2"
 
 # For accessibility purposes
 # gem "middleman-aria_current"
+gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
