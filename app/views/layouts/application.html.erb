@@ -16,12 +16,14 @@
     <%# Below is a link to render a template (like a component in react) into the page. these files use _filename to denote being a partial %>
     <%= render 'home/partials/header' %>
     <div class="container">
-      <%# below ernder alerts %>
+      <%# below render alerts %>
       <% if notice %>
         <%= render 'layouts/alerts' %>
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+        <%# <p class="notice"><%= notice ></p> %>
       <% end %>
+        <%if current_user %>
+        <p>Logged in as : <%= current_user.email %></p>
+        <% end %>
       <%= yield %>
     </div>
 
