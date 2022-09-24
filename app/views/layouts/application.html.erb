@@ -20,6 +20,7 @@
       <% if notice %>
         <%= render 'layouts/alerts' %>
         <%# <p class="notice"><%= notice ></p> %>
+        <p class="alert"><%= alert %></p>
       <% end %>
         <%if current_user %>
         <p>Logged in as : <%= current_user.email %></p>
