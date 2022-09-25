@@ -1,6 +1,10 @@
-<h1 class="mt-2 mb-2">Add New Friend</h1>
+<div class="card text-bg-light mb-3">
+  <h1 class="card-header mt-2 mb-2">Add New Friend</h1>
+  <div class="card-body">
+    <%= render "form", friend: @friend %>
+  </div>
+</div>
 
-<%= render "form", friend: @friend %>
 <br>
 
 <div>
